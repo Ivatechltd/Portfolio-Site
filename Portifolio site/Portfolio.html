@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Yves ISHIMWE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo" onclick="showSection('home')">Portfolio<span>.</span></div>
+            <div class="menu-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+            <ul id="nav-menu">
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('services')">Services</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="content-section active">
+        <div class="hero-text">
+            <h1>Yves ISHIMWE</h1>
+            <h3>I'm a <span class="typing"></span></h3>
+            <p>Technology-driven expert specialist in networking, automation, and IT support services.</p>
+           <div class="btn-container">
+            <!-- REMOVED 'download' AND ADDED 'target="_blank"' -->
+            <a href="CV.pdf" class="btn" target="_blank">View CV</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ishimwe-yves-8915a8321" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/mugabeyves"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="img-box">
+                <img src="yves.jpg" alt="Yves ISHIMWE">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <div class="section-container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="card about-card">
+                <p>IvaTech Solutions Ltd is a technology-driven company specializing in networking, automation, and IT support services. As a professional field technician and IT student, I provide expert guidance for troubleshooting, infrastructure improvement, and secure system deployments.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="content-section">
+        <div class="section-container">
+            <h2 class="section-title">Professional <span>Services</span></h2>
+            <div class="services-grid">
+                <div class="card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Network Deployment</h3>
+                    <p>Custom LAN/WAN architecture and router configuration for SMBs.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Security & VPN</h3>
+                    <p>Firewall hardening (Palo Alto/Cisco) and secure remote access.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Network Automation</h3>
+                    <p>Ansible and Python scripting to eliminate manual config errors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section">
+        <div class="section-container">
+            <h2 class="section-title">Contact <span>Me</span></h2>
+            <div class="contact-wrapper">
+                <div class="card contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+250 729 104 499 <br> +250 790 198 258</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>ishimweyves991@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Kigali, Rwanda</p>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5"></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
